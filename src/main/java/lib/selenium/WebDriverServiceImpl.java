@@ -355,5 +355,9 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 	public String getUrl() {
 		return driver.getCurrentUrl();
 	}
+	
+	public String getTitle() {
+		return driver.getTitle();
+	}
 
 }
