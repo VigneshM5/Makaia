@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="LeafTapPar" parallel="classes">
+  <test thread-count="2" name="LeafTapPar" parallel="classes">
+    <classes>
+      <class name="tests.CreateLead"/>
+      <class name="tests.EditLead"/>
+      <class name="tests.DeleteLead"></class>      
+    </classes>
+  </test> <!-- LeafTapPar -->
+</suite> <!-- LeafTapPar -->

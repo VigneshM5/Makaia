@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="24111" started-at="2018-07-08T10:44:27Z" finished-at="2018-07-08T10:44:51Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="24111" started-at="2018-07-08T10:44:27Z" finished-at="2018-07-08T10:44:51Z">
+      <class name="grid.CrystalCruises">
+        <test-method status="PASS" signature="crystalCruises()[pri:0, instance:grid.CrystalCruises@14ba872]" name="crystalCruises" duration-ms="16515" started-at="2018-07-08T10:44:27Z" finished-at="2018-07-08T10:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crystalCruises -->
+      </class> <!-- grid.CrystalCruises -->
+      <class name="grid.Leaftaps">
+        <test-method status="PASS" signature="login()[pri:0, instance:grid.Leaftaps@67ae56]" name="login" duration-ms="23993" started-at="2018-07-08T10:44:27Z" finished-at="2018-07-08T10:44:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- grid.Leaftaps -->
+      <class name="grid.JqueryUi">
+        <test-method status="PASS" signature="frame()[pri:0, instance:grid.JqueryUi@25b2fe]" name="frame" duration-ms="13083" started-at="2018-07-08T10:44:27Z" finished-at="2018-07-08T10:44:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frame -->
+      </class> <!-- grid.JqueryUi -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [GroupRun]" parallel="classes">
+  <test thread-count="4" name="GroupRun(failed)" parallel="classes">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+        <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.CreateLead">
+        <methods>
+          <include name="createLead"/>
+        </methods>
+      </class> <!-- tests.CreateLead -->
+      <class name="tests.EditLead">
+        <methods>
+          <include name="editLead"/>
+        </methods>
+      </class> <!-- tests.EditLead -->
+      <class name="tests.MergeLeads">
+        <methods>
+          <include name="mergeLeads"/>
+        </methods>
+      </class> <!-- tests.MergeLeads -->
+      <class name="tests.DeleteLead">
+        <methods>
+          <include name="deleteLead"/>
+        </methods>
+      </class> <!-- tests.DeleteLead -->
+    </classes>
+  </test> <!-- GroupRun(failed) -->
+</suite> <!-- Failed suite [GroupRun] -->
