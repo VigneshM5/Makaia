@@ -359,5 +359,6 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 	public String getTitle1() {
 		return driver.getTitle();
 	}
+	
 
 }
