@@ -14,7 +14,7 @@ public abstract class Reports {
 
 	public static ExtentHtmlReporter html;
 	public static ExtentReports extent;
-	public static ExtentTest testSuite, test;
+	public  ExtentTest testSuite, test;
 
 	
 	//@BeforeSuite

@@ -4,12 +4,14 @@
   <parameter name="password" value="crmsfa"/>
   <parameter name="url" value="http://leaftaps.com/opentaps/control/login"/>
   <parameter name="username" value="DemoSalesManager"/>
+  <listeners>
+    <listener class-name="lib.listeners.TestNGListeners"/>
+  </listeners>
   <test thread-count="5" verbose="5" name="Parameters_Test(failed)">
     <classes>
-      <class name="test.EditLead">
+      <class name="test.CreateLead">
         <methods>
           <include name="afterClass"/>
-          <include name="editLead" invocation-numbers="1"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
@@ -17,9 +19,10 @@
           <include name="afterMethod"/>
           <include name="setValue"/>
           <include name="afterTest"/>
+          <include name="createLead" invocation-numbers="1"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- test.EditLead -->
+      </class> <!-- test.CreateLead -->
     </classes>
   </test> <!-- Parameters_Test(failed) -->
 </suite> <!-- Failed suite [Parameters_Test] -->

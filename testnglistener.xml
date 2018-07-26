@@ -11,8 +11,8 @@
 <parameter name="password" value="crmsfa"></parameter>
   <test name="Parameters_Test">
     <classes>
-      <class name="tests.CreateLead"/>
-      <class name="tests.EditLead"/>
+      <class name="test.CreateLead"/>
+     <!--  <class name="test.pages.EditLead"/> -->
     </classes>
   </test> <!-- Parameters_Test -->
 </suite> <!-- Parameters_Test -->

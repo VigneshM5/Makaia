@@ -58,7 +58,7 @@ public class PreAndPost extends WebDriverServiceImpl{
 
 	@BeforeClass
 	public void beforeClass() {
-		startTestCase(testCaseName, testDesc);
+		startTestCase("testCaseName", "testDesc");
 		
 	}
 

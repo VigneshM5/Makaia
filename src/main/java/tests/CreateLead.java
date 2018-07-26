@@ -6,11 +6,13 @@ import org.testng.annotations.Test;
 
 import lib.selenium.PreAndPost;
 
+
+
 public class CreateLead extends PreAndPost{
 
-	@Test(groups = {"Smoke"}, dataProvider = "UAT")
+	@Test(groups = {"Smoke"}, dataProvider = "SIT")
 	public void createLead(String cName, String fName, String lName, String eMail
-			, int phone) {
+			, String phone) {
 
 		WebElement eleCL = locateElement("link", "Create Lead");
 		click(eleCL);

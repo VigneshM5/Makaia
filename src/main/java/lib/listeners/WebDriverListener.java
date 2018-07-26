@@ -27,8 +27,8 @@ import lib.reports.Reports;
 
 public class WebDriverListener extends Reports implements WebDriverEventListener  {
 
-	public static ChromeDriver webdriver;
-	public static EventFiringWebDriver driver;
+	public  ChromeDriver webdriver;
+	public  EventFiringWebDriver driver;
 	public int i = 1;
 	
 	public WebDriverListener() {

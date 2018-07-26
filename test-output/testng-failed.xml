@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
-  <test thread-count="5" name="Test(failed)" parallel="classes">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Parameters_Test]">
+  <parameter name="password" value="crmsfa"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps/control/login"/>
+  <parameter name="username" value="DemoSalesManager"/>
+  <listeners>
+    <listener class-name="lib.listeners.TestNGListeners"/>
+  </listeners>
+  <test thread-count="5" verbose="5" name="Parameters_Test(failed)">
     <classes>
-      <class name="grid.Leaftaps">
+      <class name="test.CreateLead">
         <methods>
-          <include name="login"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="setValue"/>
+          <include name="afterTest"/>
+          <include name="createLead" invocation-numbers="1"/>
+          <include name="beforeSuite"/>
         </methods>
-      </class> <!-- grid.Leaftaps -->
+      </class> <!-- test.CreateLead -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Parameters_Test(failed) -->
+</suite> <!-- Failed suite [Parameters_Test] -->
